@@ -67,13 +67,15 @@
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <Button
+                        android:id="@+id/likeButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/ic_thumb_up" />
+                        android:background="@drawable/thumsup_selector" />
 
                     <TextView
+                        android:id="@+id/likeCountView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="15dp"
@@ -203,8 +205,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:text="줄거리"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -276,8 +278,8 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
-            android:padding="5dp"
-            android:background="@android:color/background_light">
+            android:background="@android:color/background_light"
+            android:padding="5dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -311,14 +313,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:text="모두 보기"
-                android:background="@drawable/show_all"/>
+                android:background="@drawable/show_all"
+                android:text="모두 보기" />
         </RelativeLayout>
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="10dp">
 
             <Button
                 android:layout_width="66dp"
@@ -336,11 +338,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/reservation_button"
                 android:text="예매하기"
-                android:textStyle="bold"
-                android:textSize="20dp"
                 android:textColor="@android:color/background_light"
-                android:background="@drawable/reservation_button"/>
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
